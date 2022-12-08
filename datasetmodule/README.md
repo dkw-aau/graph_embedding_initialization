@@ -34,7 +34,7 @@ Your GBQ mimiciv dataset will be given a specific name such as `mimiciv_cdm_2021
 `datasetmodule/configuration.ini` file.
 
 ### Setup Neptune Logging
-If you with to use neptune for logging experiments, setup a free neptune account [HERE](https://app.neptune.ai/). Create
+If you want to use neptune for logging experiments, setup a free neptune account [HERE](https://app.neptune.ai/). Create
 a new neptune project and insert the project id into the configuration file at `datasetmodule/config.ini` (remove .example
 extension or create a new file). Also insert the neptune projects api_token into the .env file (remove.example 
 extension or create a new file).
