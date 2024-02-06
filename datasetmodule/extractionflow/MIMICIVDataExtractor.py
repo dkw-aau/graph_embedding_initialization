@@ -133,6 +133,12 @@ class MimicIVDataExtractor(DataExtractor):
         return f"""select CP.person_id as person, CP.gender_concept_id as gender, CP.race_concept_id as race, CP.ethnicity_concept_id as ethnicity, SP.anchor_age as age 
                    from `masterthesis-401512.mimiciv_cdm_2021_07_30.cdm_person` CP
                    join `masterthesis-401512.mimiciv_cdm_2021_07_30.src_patients` SP on CAST(SP.subject_id as string) = CP.person_source_value"""
+    
+    def person_sepsis(self):
+        return f"""select CP.person_id as person, COALESCE(SP.sepsis3, false) AS has_sepsis
+                   from `masterthesis-401512.mimiciv_cdm_2021_07_30.cdm_person` CP
+                   left outer join `masterthesis-401512.mimiciv_derived.sepsis3`SP 
+                   on CAST(SP.subject_id as string) = CP.person_source_value"""
 
     def atc_code_features(self):
         return f"""select distinct C2.concept_code as medication, C3.concept_code as atc_code

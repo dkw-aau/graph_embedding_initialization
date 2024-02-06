@@ -14,7 +14,8 @@
 
         "feature_extract": [
                 {"query": "person_features"},
-                {"query": "atc_code_features"}],
+                {"query": "atc_code_features"},
+                {"query": "person_sepsis"}],
 
         "entities": [
                 {"file_name": "person", "name": "person", "alias": "S"},
