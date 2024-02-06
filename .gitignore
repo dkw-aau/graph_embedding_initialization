@@ -2,3 +2,6 @@ datasetmodule/output
 /venv/
 .idea
 .env
+config.ini
+service_account_key
+mimiciv_gbq.json
