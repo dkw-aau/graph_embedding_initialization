@@ -5,3 +5,5 @@ datasetmodule/output
 config.ini
 service_account_key
 mimiciv_gbq.json
+*.pyc
+mimiciv.json

@@ -32,6 +32,7 @@
         ],
 
         "aux_features": [
+                {"data_file": "graphlet_features", "entity": "all", "function": "graphlets"}
         ],
 
         "aux_relations": [
@@ -52,6 +53,7 @@
                 {"data_file": "atc_code_features", "entity": "medication", "function": "medication_atc_hierarchy"},
                 {"data_file": "", "entity": "labtest", "function": "labtest_loinc_hierarchy"},
                 {"data_file": "", "entity": "procedure", "function": "procedure_icd_hierarchy"},
-                {"data_file": "", "entity": "diagnosis", "function": "diagnosis_icd_hierarchy"}
+                {"data_file": "", "entity": "diagnosis", "function": "diagnosis_icd_hierarchy"},
+                {"data_file": "graphlet_features", "entity": "all", "function": "graphlets"}
         ]
 }
